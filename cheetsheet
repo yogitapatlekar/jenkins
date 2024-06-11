@@ -1,0 +1,2 @@
+alternatives --config java  #to set which version we want to set for execution
+
