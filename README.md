@@ -2,4 +2,8 @@ this is b30 batch
 very talented batch 
 qkmfcknmfcmfcflkfc
 qcl,qlfc,meekfc
-eclfcmewfc
+eclfcmewfc 
+xjwqjdijijijd
+xnwndiwjdihjdijw    
+kxkwxdkwwd
+cnwkncww
