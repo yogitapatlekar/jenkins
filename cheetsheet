@@ -44,22 +44,54 @@ mvn -version
 pipeline {
     agent any
     stages {
+        stage('Pull') {
+            steps {
+                echo '"pull successfully"'
+            }
+        }
         stage('Build') {
             steps {
-                //
+                echo '"Build successfully"'
             }
         }
         stage('Test') {
             steps {
-                //
+                echo '"Test successfully"'
             }
         }
         stage('Deploy') {
             steps {
-                //
+                echo '"Deploy successfully"'
+            }
+        }
+    }
+} 
+
+
+#pull and Build 
+
+pipeline {
+    agent any
+    stages {
+        stage('Pull') {
+            steps {
+                git 'https://github.com/sharadrathod/studentapp-ui.git'
+            }
+        }
+        stage('Build') {
+            steps {
+                sh '/opt/maven/bin/mvn clean package '
+            }
+        }
+        stage('Test') {
+            steps {
+                echo '"Test successfully"'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo '"Deploy successfully"'
             }
         }
     }
 }
-
-
